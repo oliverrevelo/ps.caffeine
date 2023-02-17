@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login with P</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/icon.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>P's</strong> <span>Caffeine</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li><a href="coffees.html">Coffees</a></li>
+							<li><a href="partner.html">Partners</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="index.html" class="button primary fit">Get Started</a></li>
+							<li><a href="login.html" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Coming Soon!</h1>
+								<p id="demo" style="font-size:30px"></p>
+							</header>
+							
+						</div>
+					</section>
+
+					<script>
+						// Set the date we're counting down to
+						var countDownDate = new Date("Jan 27, 2024 00:00:00").getTime();
+						
+						// Update the count down every 1 second
+						var countdownfunction = setInterval(function() {
+						
+						  // Get todays date and time
+						  var now = new Date().getTime();
+						  
+						  // Find the distance between now an the count down date
+						  var distance = countDownDate - now;
+						  
+						  // Time calculations for days, hours, minutes and seconds
+						  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						  
+						  // Output the result in an element with id="demo"
+						  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+						  + minutes + "m " + seconds + "s ";
+						  
+						  // If the count down is over, write some text 
+						  if (distance < 0) {
+							clearInterval(countdownfunction);
+							document.getElementById("demo").innerHTML = "EXPIRED";
+						  }
+						}, 1000);
+						</script>
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://facebook.com/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://instagram.com/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.io/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://linkein.com/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Oliver</li><li>Design: <a href="https://html5up.net">PHTHARTIC</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
